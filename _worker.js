@@ -797,22 +797,6 @@ async function getVLESSConfig(userID, hostName, sub, userAgent, RproxyIP) {
 	---------------------------------------------------------------
 	################################################################
 	clash-meta
-	---------------------------------------------------------------
-	- type: vless
-	  name: ${hostName}
-	  server: ${hostName}
-	  port: 443
-	  uuid: ${userID}
-	  network: ws
-	  tls: true
-	  udp: false
-	  sni: ${hostName}
-	  client-fingerprint: chrome
-	  ws-opts:
-	    path: "/?ed=2048"
-	    headers:
-		  host: ${hostName}
-	---------------------------------------------------------------
 	################################################################
 	`;
 	} else if (sub && userAgent.includes('mozilla')) {
@@ -831,28 +815,6 @@ async function getVLESSConfig(userID, hostName, sub, userAgent, RproxyIP) {
 	---------------------------------------------------------------
 	################################################################
 	clash-meta
-	---------------------------------------------------------------
-	- type: vless
-	  name: ${hostName}
-	  server: ${hostName}
-	  port: 443
-	  uuid: ${userID}
-	  network: ws
-	  tls: true
-	  udp: false
-	  sni: ${hostName}
-	  client-fingerprint: chrome
-	  ws-opts:
-		path: "/?ed=2048"
-		headers:
-		  host: ${hostName}
-	---------------------------------------------------------------
-	################################################################
-	telegram 交流群 技术大佬~在线发牌!
-	https://t.me/CMLiussss
-	---------------------------------------------------------------
-	github 项目地址 Star!Star!Star!!!
-	https://github.com/cmliu/edgetunnel
 	---------------------------------------------------------------
 	################################################################
 	`;
